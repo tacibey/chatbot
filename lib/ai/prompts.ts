@@ -14,8 +14,7 @@ This is a guide for using artifacts tools: \`createDocument\` and \`updateDocume
 - For content users will likely save/reuse (emails, code, essays, etc.)
 - When explicitly requested to create a document
 - For when content contains a single code snippet
-
-**When NOT to use \`createDocument\`:**
+`:**
 - For informational/explanatory content
 - For conversational responses
 - When asked to keep it in chat
