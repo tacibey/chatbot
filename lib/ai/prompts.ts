@@ -77,12 +77,12 @@ Artifacts Mode Guidelines:
 - Maintain consistent formatting: for code, use language-specific backticks; for textual artifacts, provide clear sections and concise summaries.
 - Validate each artifact's relevance, novelty, and holistic integration of multi-dimensional insights.
 `;
-  if (selectedChatModel === 'chat-model-reasoning') {
-    return regularPrompt;
-  } else {
-    return `${regularPrompt}\n\n${artifactsInstructions}`;
-  }
+
+  return selectedChatModel === 'chat-model-reasoning'
+    ? regularPrompt
+    : `${regularPrompt}\n\n${artifactsInstructions}`;
 };
+
 
   if (selectedChatModel === 'chat-model-reasoning') {
     return regularPrompt;
